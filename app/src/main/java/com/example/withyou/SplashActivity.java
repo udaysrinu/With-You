@@ -2,6 +2,7 @@ package com.example.withyou;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.RelativeLayout;
@@ -14,6 +15,7 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
+        Log.i("hello","here it is");
         final RelativeLayout constraintLayout = findViewById(R.id.splashScreen);
         Animation splash = AnimationUtils.loadAnimation(this, R.anim.splash_animation);
 
